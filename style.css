@@ -138,7 +138,7 @@ body{
 .boostbtn{
 	width: 130;height: 35;
 	position: absolute;
-	left: 34%;
+	left: 30%;
 	top: 85%;
 	transform: translate(-50%, -50%);
 	
@@ -178,7 +178,7 @@ body{
 .boostbtn_2{
 	width: 130;height: 35;
 	position: absolute;
-	left: 66%;
+	left: 70%;
 	top: 85%;
 	transform: translate(-50%, -50%);
 	
