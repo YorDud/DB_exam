@@ -19,7 +19,7 @@ function addMoney() { // onClicker pressed add ClickGain
   money = money + clickGain;
 }
 function updateMoney(check=true) {//update html money txt
-  text = "Coins: $" + money;
+  text = "JUMPS: " + money;
   element.money.innerHTML = text;
   if(check){checkPrices();}
 }
@@ -101,19 +101,26 @@ class ShopElement{
 
 //alls buttons functions ( newPriceFormula , onClick )
 function newPrice1(obj){obj.price = clickGain * 25 * obj.purchaseLvl;}
-function newPrice2(obj){obj.price = 200 * obj.purchaseLvl;}
-function newPrice3(obj){obj.price = autoGain * 30 * obj.purchaseLvl + 500;}
+function newPrice2(obj){obj.price = 250 * obj.purchaseLvl;}
+function newPrice3(obj){obj.price = autoGain * 30 * obj.purchaseLvl + 900;}
+function newPrice4(obj){obj.price = clickGain * 25 * obj.purchaseLvl;}
+function newPrice5(obj){obj.price = clickGain * 550 * obj.purchaseLvl;}
 function onClick1(obj){clickGain*=2;}
 function onClick2(obj){autoMoney(this.purchaseLvl);}
 function onClick3(obj){autoGain*=2;}
+function onClick4(obj){clickGain*=2;}
+function onClick5(obj){clickGain*=5;}
 
 
 
 //all shop's buttons
 shop = [
-	new ShopElement("b1",newPrice1,onClick1),
+	//new ShopElement("b1",newPrice1,onClick1),
 	new ShopElement("b2",newPrice2,onClick2),
 	new ShopElement("b3",newPrice3,onClick3),
+	new ShopElement("b4",newPrice4,onClick4),
+	new ShopElement("b5",newPrice5,onClick5),
+	
 	//new ShopElement("b4",newPrice4,onClick3),
 ];
 

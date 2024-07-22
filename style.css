@@ -5,7 +5,7 @@
 */
 body{
 	background: rgb(00,000,000);
-	background: radial-gradient(circle, rgba(245, 40, 145, 0.8) 0%, rgba(255, 0, 132, 1) 31%, rgba(255, 0, 0, 1) 100%);
+	background: radial-gradient(circle, rgba(15, 14, 15, 0.8)/*rgba(245, 40, 145, 0.8)*/ 0%, rgba(255, 0, 132, 1) 10%, rgba(18, 15, 17, 1) 70%);
 }
 
 :root {
@@ -27,7 +27,7 @@ body{
 	/*Revome buttons borders and otlines*/
 	outline: none;
 	border: none;
-	background-color:#FFFFFF;/*white*/
+	background-color:rgba(135, 35, 86, 0.8);/*серый*/
 	
 	/*Transition Animation between hover/active...*/
 	transition: box-shadow 0.3s, background-color 0.3s;
@@ -42,30 +42,187 @@ body{
 	background-color:#F0F0F0;
 }
 
+.button_batoots:hover{
+	box-shadow: 0 27px 55px 0 rgba(255, 0, 132, 1);/*shadow*/
+}
+.button_batoots:active{
+	/*Shadow, color transition*/
+	transition: box-shadow 0.15s, background-color 0.1s;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+	background-color:#F0F0F0;
+}
+
+
+
+
+
 /*
 			================= SHOP =================
 */
 .button{
-	width: 200;height: 50;
+	width: 300;height: 70;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	
+	align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 .button:disabled{
 	background-color: #B3B3B3;
 }
+
+
+.button_batoots{
+	width: 300;height: 70;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	align-items: center;
+  background-color: rgba(255, 0, 132, 1);
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button_batoots:disabled{
+	background-color: #B3B3B3;
+}
+
+
+
+
 .boostbtn{
 	width: 200;height: 50;
 	position: absolute;
-	left: 50%;
+	left: 32%;
 	top: 80%;
 	transform: translate(-50%, -50%);
+	
+	
+  align-items: center;
+  background-color: rgba(255, 0, 132, 1);
+  border-radius: 12px;
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0 /*transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px*/;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-#b1{top:22%}
-#b2{top:32%}
-#b3{top:42%}
-#b4{top:52%}
+.boostbtn:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+
+}
+
+.boostbtn_2{
+	width: 200;height: 50;
+	position: absolute;
+	left: 68%;
+	top: 80%;
+	transform: translate(-50%, -50%);
+	
+	
+  align-items: center;
+  background-color: rgba(255, 0, 132, 1);
+  border-radius: 12px;
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0 /*transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px*/;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.boostbtn_2:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+
+}
+
+#b2{top:25%}
+#b3{top:40%}
+/*#b1{top:42%}*/
+
+
+#b4{top:25%}
+#b5{top:40%}
+/*#b4{top:52%}*/
 
 
 /* 
@@ -98,6 +255,8 @@ body{
 */
 
 .money-text {
+	font-family: Anurati; /* Гарнитура шрифта */
+    src: url(fonts/anurati_regular.ttf); /* Путь к файлу со шрифтом */
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
