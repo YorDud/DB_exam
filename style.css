@@ -257,10 +257,10 @@ body{
 .money-text {
 	font-family: Anurati; /* Гарнитура шрифта */
     src: url(fonts/anurati_regular.ttf);
-	src: url('fonts/anurati_regular.eot?#iefix') format('embedded-opentype'),
-		url('fonts/anurati_regular.woff2') format('woff2'), 
-		url('fonts/anurati_regular.woff') format('woff'),
-		url('fonts/anurati_regular.ttf') format('truetype');	/* Путь к файлу со шрифтом */
+	src: url(fonts/anurati_regular.eot?#iefix) format(embedded-opentype),
+		url(fonts/anurati_regular.woff2) format(woff2), 
+		url(fonts/anurati_regular.woff) format(woff),
+		url(fonts/anurati_regular.ttf) format(truetype);	/* Путь к файлу со шрифтом */
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
