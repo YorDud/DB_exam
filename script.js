@@ -2,10 +2,17 @@
 
 //       									 ============= GLOBAL VARIABLES =============
 
-var money = 0,//global player's money
+var money = parseInt(localStorage.getItem('moneys')),//global player's money
 	clickGain = 1,//money gain on clicker clicked =
-	autoGain = 1,//auto money gain
+	autoGain = 1,//parseInt(localStorage.getItem('autoGains')),//auto money gain
 	interval;//auto money interval
+	
+if (clickGain >= 1){
+		clickGain = parseInt(localStorage.getItem('clickGains'));
+	}
+
+
+
 
 // HTML MAIN ELEMENTS (except  shop buttons)
 var element = {
@@ -17,11 +24,22 @@ var element = {
 
 function addMoney() { // onClicker pressed add ClickGain
   money = money + clickGain;
+  
+  
+  localStorage.setItem('moneys', money);
+  localStorage.setItem('clickGains', clickGain);
+  localStorage.setItem('autoGains', autoGain);
 }
+
 function updateMoney(check=true) {//update html money txt
   text = "JUMPS: " + money;
   element.money.innerHTML = text;
   if(check){checkPrices();}
+  
+/*if (autoGain >= 1){
+		autoGain = parseInt(localStorage.getItem('autoGains'));
+	}*/
+
 }
 function autoMoney(amount) {//auto add money every interval
   clearInterval(interval);
@@ -43,6 +61,9 @@ function onBuy(obj) {
 	//update money
 	money -= obj.price;
 	updateMoney(check=false);
+	//localStorage.setItem('moneys', money);
+	//localStorage.setItem('clickGain', clickGain);
+	//localStorage.setItem('autoGain', autoGain);
 	//lock every purchase buttons in shop
 	for(let i=0;i<shop.length;i++){
 		shop[i].element.disabled = true;
