@@ -15,6 +15,14 @@ var //money = 0,//parseInt(localStorage.getItem('moneys')),//global player's mon
 		var money = 0;
 	}
 	
+	if ((localStorage.getItem('clickGains')) >= 1){
+		var clickGain = parseInt(localStorage.getItem('clickGains'));
+		
+	}
+	else{
+		var clickGain = 1;
+	}
+	
 	
 /*if (clickGain >= 1){
 		clickGain = parseInt(localStorage.getItem('clickGains'));
