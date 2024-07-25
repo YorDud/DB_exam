@@ -2,13 +2,14 @@
 
 //       									 ============= GLOBAL VARIABLES =============
 
-var //money = parseInt(localStorage.getItem('moneys')),//global player's money
+var money = 0,//parseInt(localStorage.getItem('moneys')),//global player's money
 	clickGain = 1,//money gain on clicker clicked =
 	autoGain = 1,//parseInt(localStorage.getItem('autoGains')),//auto money gain
 	interval;//auto money interval
 
 	if (localStorage.getItem('moneys')){
 		var money = parseInt(localStorage.getItem('moneys'));
+		
 	}
 	else{
 		var money = 0;
