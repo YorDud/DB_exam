@@ -7,9 +7,9 @@ var money = parseInt(localStorage.getItem('moneys')),//global player's money
 	autoGain = 1,//parseInt(localStorage.getItem('autoGains')),//auto money gain
 	interval;//auto money interval
 	
-if (clickGain >= 1){
+/*if (clickGain >= 1){
 		clickGain = parseInt(localStorage.getItem('clickGains'));
-	}
+	}*/
 
 
 
