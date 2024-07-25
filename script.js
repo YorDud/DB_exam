@@ -3,10 +3,12 @@
 //       									 ============= GLOBAL VARIABLES =============
 
 var //money = 0,//parseInt(localStorage.getItem('moneys')),//global player's money
-	clickGain = 1,//money gain on clicker clicked =
+	//clickGain = 1,//money gain on clicker clicked =
 	autoGain = 1,//parseInt(localStorage.getItem('autoGains')),//auto money gain
 	interval;//auto money interval
 
+	
+	// ДЕНЬГИ ПОЛЬЗОВАТЕЛЯ
 	if ((localStorage.getItem('moneys')) > 0){
 		var money = parseInt(localStorage.getItem('moneys'));
 		
@@ -15,6 +17,8 @@ var //money = 0,//parseInt(localStorage.getItem('moneys')),//global player's mon
 		var money = 0;
 	}
 	
+	
+	// ДЕНЬГИ ЗА ОДИН КЛИК
 	if ((localStorage.getItem('clickGains')) >= 1){
 		var clickGain = parseInt(localStorage.getItem('clickGains'));
 		
