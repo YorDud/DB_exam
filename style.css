@@ -4,9 +4,12 @@
 			================= BODY =================
 */
 body{
+	
 	background: rgb(00,000,000);
-	background: radial-gradient(circle, rgba(15, 14, 15, 0.8)/*rgba(245, 40, 145, 0.8)*/ 0%, rgba(255, 0, 132, 1) 10%, rgba(18, 15, 17, 1) 70%);
+	background: radial-gradient(circle at 50% 45%, rgba(15, 14, 15, 0.8)/*rgba(245, 40, 145, 0.8)*/ 0%, rgba(255, 0, 132, 1) 10%, rgba(18, 15, 17, 1) 70%);
+	
 }
+
 
 :root {
   touch-action: pan-x pan-y;
@@ -26,16 +29,25 @@ body{
     
 	/*Revome buttons borders and otlines*/
 	outline: none;
-	border: none;
-	background-color:rgba(135, 35, 86, 0.8);/*серый*/
+	border: medium none;
+	/*   =============  ОГРОМНЫЙ ВОПРОС ПО ЭТОЙ ХУЙНЕ КОД ЧТО НИЖЕ УБИРАЕТ ТЕНЬ КНОПКИ КЛИКЕРА  =============*/
+	/*background-color:rgba(135, 35, 86, 0.8);/*серый*/
+	background-image: none; 
+	background: transparent;
+	float: left;
+	background-color: transparent;
+	
 	
 	/*Transition Animation between hover/active...*/
 	transition: box-shadow 0.3s, background-color 0.3s;
 }
+
 .button:hover, .clicker:hover{
+	
 	box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(15, 15, 15, 0.15);/*shadow*/
 }
 .button:active, .clicker:active{
+	
 	/*Shadow, color transition*/
 	transition: box-shadow 0.15s, background-color 0.1s;
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 20px 20px 0 rgba(0, 0, 0, 0.15);
@@ -63,6 +75,7 @@ body{
 	width: 300;height: 70;
 	position: absolute;
 	left: 50%;
+	
 	transform: translate(-50%, -50%);
 	
 	align-items: center;
@@ -139,7 +152,7 @@ body{
 	width: 130;height: 35;
 	position: absolute;
 	left: 30%;
-	top: 85%;
+	top: 75%;
 	transform: translate(-50%, -50%);
 	
 	
@@ -179,7 +192,7 @@ body{
 	width: 130;height: 35;
 	position: absolute;
 	left: 70%;
-	top: 85%;
+	top: 75%;
 	transform: translate(-50%, -50%);
 	
 	
@@ -237,7 +250,7 @@ body{
 	height:250px;
 	/* Position */
 	position: absolute;/*                postulat de départ */
-	top: 50%; left: 50%;/*               à 50%/50% du parent référent */
+	top: 45%; left: 50%;/*               à 50%/50% du parent référent */
 	transform: translate(-50%, -50%);/*  décalage de 50% de sa propre taille */
 	/* Animation */
 	transition: width 0.3s, height 0.3s;
@@ -283,22 +296,22 @@ body{
    right: 0;
    bottom: 0;
    text-align: center; 
-   height: 7%;
+   height: 12%;
    width: 100%;   
    font-size: 19px;
 font-weight: bold;
-  color: #fafaff;  
+  color: #000000;  
  }
  
  
-.footer_buttons{
+.footer_buttons_home{
 	/*Size*/
 	/*border-radius: 50%;*/
 	width:40px;
 	height:40px;
 	/* Position */
 	position: absolute;/*                postulat de départ */
-	top: 50%; left: 30%;/*               à 50%/50% du parent référent */
+	top: 37%; left: 30%;/*               à 50%/50% du parent référent */
 	transform: translate(-50%, -50%);
 	border: none;
 	/*(width: 50;height: 50;
@@ -308,7 +321,8 @@ font-weight: bold;
 	transform: translate(-50%, -50%);
 	
 	align-items: center;*/
-  background-color: #000000;
+	background-color: #000000;
+}
   /*border-radius: 12px;*/
   /*box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
   box-sizing: border-box;
@@ -332,6 +346,26 @@ font-weight: bold;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}*/
+
+.footer_buttons_tasks{
+	/*Size*/
+	/*border-radius: 50%;*/
+	width:40px;
+	height:40px;
+	/* Position */
+	position: absolute;/*                postulat de départ */
+	top: 37%; left: 50%;/*               à 50%/50% du parent référent */
+	transform: translate(-50%, -50%);
+	border: none;
+	/*(width: 50;height: 50;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	align-items: center;*/
+	background-color: #000000;
 }
 
 
