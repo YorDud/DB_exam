@@ -271,3 +271,68 @@ body{
   color: #FFFFFF;
   font-size: 50;
 }
+/*  ============== НИЗ ПРИЛОЖЕНИЯ С КНОПКАМИ ============= */
+
+.footer::body {
+  font-family: PT Astra Sans;
+   background-color: #000000;
+   }
+.footer {
+  background-color: #000000;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   text-align: center; 
+   height: 7%;
+   width: 100%;   
+   font-size: 19px;
+font-weight: bold;
+  color: #fafaff;  
+ }
+ 
+ 
+.footer_buttons{
+	/*Size*/
+	/*border-radius: 50%;*/
+	width:40px;
+	height:40px;
+	/* Position */
+	position: absolute;/*                postulat de départ */
+	top: 50%; left: 30%;/*               à 50%/50% du parent référent */
+	transform: translate(-50%, -50%);
+	border: none;
+	/*(width: 50;height: 50;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	align-items: center;*/
+  background-color: #000000;
+  /*border-radius: 12px;*/
+  /*box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  /*padding: 1rem 1.2rem;
+  /*text-align: center;
+  /*text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
