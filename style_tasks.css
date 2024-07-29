@@ -6,7 +6,7 @@
 body{
 	
 	background: rgb(00,000,000);
-	background: radial-gradient(circle at 50% 45%, rgba(15, 14, 15, 0.8)/*rgba(245, 40, 145, 0.8)*/ 0%, rgba(255, 0, 132, 1) 10%, rgba(18, 15, 17, 1) 70%);
+	background: radial-gradient(circle at 50% 45%, rgba(255, 0, 132, 1)/*rgba(245, 40, 145, 0.8)*/ 7%/*, rgba(255, 0, 132, 1) 10%*/, rgba(18, 15, 17, 1) 70%);
 	
 }
 
@@ -145,7 +145,27 @@ body{
 	background-color: #B3B3B3;
 }
 
+.container {
+  width: 96%;
+  height: 96%;
+  position: absolute;
+	left: 2%;
+	top: 2%;
+	background-color: rgba(0,0,0,0.7);/*//0.5=half*/
+}
 
+.task1 {
+	font-size: 100%;
+	color: white;
+  width: 40%;
+  height: 7%;
+  position: absolute;
+	left: 30%;
+	top: 10%;
+	background-color: rgba(0, 0, 0, 1);/*//0.5=half*/
+	
+	
+}
 
 
 .boostbtn{
@@ -369,10 +389,7 @@ font-weight: bold;
 }
 
 
-.container {
-  width: 100px;
-  height: 100px;
-}
+
 
 
 
